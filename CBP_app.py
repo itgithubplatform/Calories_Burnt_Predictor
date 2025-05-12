@@ -2,10 +2,9 @@ from flask import Flask, request, render_template
 from flask_cors import cross_origin
 from sklearn.preprocessing import PowerTransformer
 import pickle
-
 app = Flask(__name__)
 
-with open('D:\\EDA\\CaloriesBurnt_Predictor v1.0\\CaloriesBurnt_Predictor.pkl', 'rb') as file:
+with open(r"C:\Users\benug\CaloriesBurnt-Predictor\CaloriesBurnt_Predictor.pkl", 'rb') as file:
     data = pickle.load(file)
     model = data['model']
     transformer = data['transformer']

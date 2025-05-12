@@ -2,7 +2,7 @@ import pickle
 import numpy as np
 
 # Load the trained model and PowerTransformer
-with open('D:\\EDA\\CaloriesBurnt_Predictor v1.0\\CaloriesBurnt_Predictor.pkl', 'rb') as file:
+with open(r"C:\Users\benug\CaloriesBurnt-Predictor\CaloriesBurnt_Predictor.pkl", 'rb') as file:
     data = pickle.load(file)
     model = data['model']
     transformer = data['transformer']
